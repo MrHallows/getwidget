@@ -1,5 +1,8 @@
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:getwidget/getwidget.dart';
 
 class GFLoader extends StatefulWidget {

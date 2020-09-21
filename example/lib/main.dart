@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final String _playStoreLink =
       'https://play.google.com/store/apps/details?id=dev.getflutter.appkit';
   // final String _appStoreLink = 'Coming Soon';
-  final String _githuAppRepoLink =
+  final String _githubAppRepoLink =
       'https://github.com/ionicfirebaseapp/getwidget-app-kit';
   final String _githubLibraryRepoLink =
       'https://github.com/ionicfirebaseapp/getwidget';
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: GFColors.SUCCESS,
                     blockButton: true,
                     onPressed: () {
-                      _launchUrl(_githuAppRepoLink);
+                      _launchUrl(_githubAppRepoLink);
                     }),
               ],
             ),

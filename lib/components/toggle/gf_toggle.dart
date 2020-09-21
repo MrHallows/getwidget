@@ -1,4 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:getwidget/getwidget.dart';
 
 /// A toggle button allows the user to change a setting between two states.

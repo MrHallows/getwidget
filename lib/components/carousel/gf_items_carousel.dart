@@ -1,4 +1,7 @@
+// Dart imports:
 import 'dart:async';
+
+// Flutter imports:
 import 'package:flutter/material.dart';
 
 /// When a pointer has come to contact with screen and has begun to move.

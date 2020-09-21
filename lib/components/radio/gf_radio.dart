@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:getwidget/getwidget.dart';
+// Flutter imports:
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+
+// Project imports:
+import 'package:getwidget/getwidget.dart';
 
 class GFRadio<T> extends StatefulWidget {
   const GFRadio(

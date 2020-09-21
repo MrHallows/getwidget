@@ -1,4 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:getwidget/getwidget.dart';
 
 typedef RatingChangeCallback = void Function(double rating);
