@@ -9,7 +9,7 @@
 
 [**GetWidget**](https://www.getwidget.dev) is a 100% free Flutter open-source UI library built with <a href="https://flutter.dev/" target="_blank">Flutter SDK</a> to make Flutter development easier and more joyful than ever. GetWidget has 1000+ pre-build widgets that you can reuse to develop both Flutter mobile app and web app. Our motto is to provide the best Flutter UI library to the Flutter community to speed up their development process and build awesome apps with pre-build Flutter Library Components.
 
-## Table of contents 
+## Table of contents
 
 - [Screenshot](#screenshot)
 - [Quick start](#quick-start)
@@ -19,7 +19,7 @@
 - [Documentation](#documentation)
 - [Copyright and license](#copyright-and-license)
 
- 
+
  ## Screenshot
  <p align="center">
   <a target="_blank" href="https://docs.getwidget.dev/">
@@ -30,47 +30,47 @@
 
 ## Quick start
 
-Read the [Getting started page](https://docs.getwidget.dev) 
+Read the [Getting started page](https://docs.getwidget.dev)
 Forum [Support and discussion ](https://forum.getwidget.dev)
 
-## Features 
-we have launched the library with the following components : 
- 
- #### [Button](https://docs.getwidget.dev/gf-button) |  [Badge](https://docs.getwidget.dev/gf-badge) |  [Avatar](https://docs.getwidget.dev/gf-avatar) |  [Image](https://docs.getwidget.dev/gf-image) |  [Card](https://docs.getwidget.dev/gf-card) |  [Carousel](https://docs.getwidget.dev/gf-carousel) | [Tile](https://docs.getwidget.dev/gf-tile) | [Tab](https://docs.getwidget.dev/gf-tab) | [Typography](https://docs.getwidget.dev/gf-typography) | [Toast](https://docs.getwidget.dev/gf-toast) | [Toggle](https://docs.getwidget.dev/gf-toggle) | [Drawer](https://docs.getwidget.dev/gf-drawer) | [Accordian](https://docs.getwidget.dev/gf-accordion) | [Alert](https://docs.getwidget.dev/gf-alert) | [Appbar](https://docs.getwidget.dev/gf-appbar) | [Searchbar](https://docs.getwidget.dev/gf-searchbar) 
- 
- 
- ## Demo 
- 
-   ### Play Store 
+## Features
+we have launched the library with the following components :
+
+ #### [Button](https://docs.getwidget.dev/gf-button) |  [Badge](https://docs.getwidget.dev/gf-badge) |  [Avatar](https://docs.getwidget.dev/gf-avatar) |  [Image](https://docs.getwidget.dev/gf-image) |  [Card](https://docs.getwidget.dev/gf-card) |  [Carousel](https://docs.getwidget.dev/gf-carousel) | [Tile](https://docs.getwidget.dev/gf-tile) | [Tab](https://docs.getwidget.dev/gf-tab) | [Typography](https://docs.getwidget.dev/gf-typography) | [Toast](https://docs.getwidget.dev/gf-toast) | [Toggle](https://docs.getwidget.dev/gf-toggle) | [Drawer](https://docs.getwidget.dev/gf-drawer) | [Accordion](https://docs.getwidget.dev/gf-accordion) | [Alert](https://docs.getwidget.dev/gf-alert) | [Appbar](https://docs.getwidget.dev/gf-appbar) | [Searchbar](https://docs.getwidget.dev/gf-searchbar)
+
+
+ ## Demo
+
+   ### Play Store
    <p align="left">
         <a href="https://play.google.com/store/apps/details?id=dev.getflutter.appkit" target="_blank">
           <img src="https://ik.imagekit.io/ionicfirebaseapp/tr:dpr-auto,tr:w-auto/playstore_NQQBiJIQ1.png" alt="GetWidget playstore Demo">
         </a>
       </p>
-  
+
   ### IOS Store and Web Demo
    Coming Soon
- 
+
  ### An Open-Source News App Built With GetWidget & Flutter
- Ionicfirebaseapp.com has been developed an open-source News Mobile App with GetWidget, So can start building app faster to get an overview and do customization. You can Download News App Souce Code here: https://www.ionicfirebaseapp.com/products/flutter-news-app  
+ Ionicfirebaseapp.com has been developed an open-source News Mobile App with GetWidget, So can start building app faster to get an overview and do customization. You can Download News App Souce Code here: https://www.ionicfirebaseapp.com/products/flutter-news-app
  ## Contributing
- 
+
   GetWidget is **100% free** and **open source**. We encourage and support an active, healthy community that accepts contributions from the public &ndash; including you. There are a couple of ways in which you can contribute to the growing community of `getwidget`.
-  
+
   * Pick up any issue marked with ["good first issue"](https://github.com/ionicfirebaseapp/getwidget/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
   * Fix a bug
   * Write and improve some **documentation**. Documentation is very critical to us. We would appreciate help in adding multiple languages to our docs.
   * If you are a developer, feel free to check out the source and submit pull requests.
   * Dig into [**CONTRIBUTING.MD**](CONTRIBUTING.md), which covers submitting bugs, requesting new features, preparing your code for a pull request, etc.
-  * Please don't forget to **like**, **follow**, and **star our repo**! Join our growing [community](https://forum.getwidget.dev) to keep up to date with the latest GetWidget development. 
- 
- 
- 
+  * Please don't forget to **like**, **follow**, and **star our repo**! Join our growing [community](https://forum.getwidget.dev) to keep up to date with the latest GetWidget development.
+
+
+
  ## Documentation
- 
+
   [**Installation Guide**](https://docs.getwidget.dev)
-  
- 
+
+
 ### Social Media
 
 Twitter: <https://twitter.com/getwidgetdev>
@@ -79,10 +79,10 @@ Facebook: <https://www.facebook.com/getwidget>
 
 Linkedin: <https://www.linkedin.com/showcase/getwidget/>
 
-Instagram: <https://www.instagram.com/getwidget.dev/> 
+Instagram: <https://www.instagram.com/getwidget.dev/>
 
- 
- ## Copyright-and-license 
+
+ ## Copyright-and-license
  Code and documentation Copyright 2017-2020 the [GETWIDGET Authors](https://www.getwidget.dev) and [IONICFIREBASEAPP](https://ionicfirebaseapp.com) Code released under the [MIT License]. Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
 
 ## Contributors

@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 class GFTypography extends StatelessWidget {
-  /// Creates simple title with underline. Style of title can be changed using [GFTypographyType]
-  /// showDivider is default true, can be set false.
+  /// Creates simple title with underline. Style of title can be changed using [GFTypographyType].
+  /// [showDivider] is default true, can be set false.
   const GFTypography({
     Key key,
     this.type = GFTypographyType.typo4,
@@ -20,42 +20,42 @@ class GFTypography extends StatelessWidget {
     this.showDivider = true,
     this.dividerWidth,
     this.backgroundImage,
-    this.backgroundImagecolorFilter,
+    this.backgroundImageColorFilter,
   }) : super(key: key);
 
-  /// child of  type [Widget] is alternative to text key. text will get priority over child
+  /// [child] of type [Widget] is alternative to [text] key. [text] will get priority over [child].
   final Widget child;
 
-  /// text of type [String] is alternative to child. text will get priority over child
+  /// text of type [String] is alternative to child. [text] will take priority over [child].
   final String text;
 
-  ///icon of type [Widget] used to pass icon or image
+  /// icon of type [Widget] used to pass icon or image.
   final Widget icon;
 
-  /// Pass [GFColors] or [Color] for dividerColor
+  /// Pass [GFColors] or [Color] for [dividerColor].
   final Color dividerColor;
 
-  /// Pass [GFColors] or [Color] for textColor
+  /// Pass [GFColors] or [Color] for [textColor].
   final Color textColor;
 
   /// dividerBorderRadius of type [BorderRadius] to alter the radius of the divider
   final BorderRadius dividerBorderRadius;
 
-  ///dividerAlignment of type [Alignment] used for aligning the divider to required alignment
+  /// dividerAlignment of type [Alignment] used for aligning the divider to required alignment
   final Alignment dividerAlignment;
 
-  ///Pass [bool] value to show or hide the divider
+  /// Pass [bool] value to show or hide the divider
   final bool showDivider;
 
-  ///pass [double] type to increase or decrease the width of the divider
+  /// pass [double] type to increase or decrease the width of the divider
   final double dividerWidth;
 
-  ///backgroundImage of type [ImageProvider] to set the background of [GFTypography]
+  /// backgroundImage of type [ImageProvider] to set the background of [GFTypography]
   final ImageProvider backgroundImage;
 
-  ///backgroundImagecolorFilter of type [ColorFilter] to set the
-  ///background color of [GFTypography] only when backgroundImage is available
-  final ColorFilter backgroundImagecolorFilter;
+  /// backgroundImageColorFilter of type [ColorFilter] to set the
+  /// background color of [GFTypography] only when backgroundImage is available
+  final ColorFilter backgroundImageColorFilter;
 
   /// header type of [GFTypographyType] i.e, typo1, typo2, typo3, typo4, typo5, typo6
   final GFTypographyType type;
@@ -85,7 +85,7 @@ class GFTypography extends StatelessWidget {
             ? DecorationImage(
                 image: backgroundImage,
                 fit: BoxFit.cover,
-                colorFilter: backgroundImagecolorFilter ??
+                colorFilter: backgroundImageColorFilter ??
                     const ColorFilter.mode(Colors.black54, BlendMode.darken),
               )
             : null,

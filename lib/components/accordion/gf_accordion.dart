@@ -5,28 +5,28 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 class GFAccordion extends StatefulWidget {
-  const GFAccordion(
-      {Key key,
-      this.titleChild,
-      this.content,
-      this.collapsedTitleBackgroundColor = GFColors.WHITE,
-      this.expandedTitleBackgroundColor = const Color(0xFFE0E0E0),
-      this.collapsedIcon = const Icon(Icons.keyboard_arrow_down),
-      this.expandedIcon = const Icon(Icons.keyboard_arrow_up),
-      this.title,
-      this.textStyle = const TextStyle(color: Colors.black, fontSize: 16),
-      this.titlePadding = const EdgeInsets.all(10),
-      this.contentBackgroundColor,
-      this.contentPadding = const EdgeInsets.all(10),
-      this.contentChild,
-      this.titleBorder = const Border(),
-      this.contentborder = const Border(),
-      this.margin,
-      this.showAccordion = false,
-      this.onToggleCollapsed,
-      this.titleBorderRadius = const BorderRadius.all(Radius.circular(0)),
-      this.contentBorderRadius = const BorderRadius.all(Radius.circular(0))})
-      : super(key: key);
+  const GFAccordion({
+    Key key,
+    this.titleChild,
+    this.content,
+    this.collapsedTitleBackgroundColor = GFColors.WHITE,
+    this.expandedTitleBackgroundColor = const Color(0xFFE0E0E0),
+    this.collapsedIcon = const Icon(Icons.keyboard_arrow_down),
+    this.expandedIcon = const Icon(Icons.keyboard_arrow_up),
+    this.title,
+    this.textStyle = const TextStyle(color: Colors.black, fontSize: 16),
+    this.titlePadding = const EdgeInsets.all(10),
+    this.contentBackgroundColor,
+    this.contentPadding = const EdgeInsets.all(10),
+    this.contentChild,
+    this.titleBorder = const Border(),
+    this.contentBorder = const Border(),
+    this.margin,
+    this.showAccordion = false,
+    this.onToggleCollapsed,
+    this.titleBorderRadius = const BorderRadius.all(Radius.circular(0)),
+    this.contentBorderRadius = const BorderRadius.all(Radius.circular(0))
+  }) : super(key: key);
 
   final Function(bool) onToggleCollapsed;
 
@@ -76,7 +76,7 @@ class GFAccordion extends StatefulWidget {
   final Border titleBorder;
 
   ///contentBorderColor of type  [Color] or [GFColors] which is used to change the border color of content
-  final Border contentborder;
+  final Border contentBorder;
 
   ///titleBorderRadius of type  [Radius]  which is used to change the border radius of title
   final BorderRadius titleBorderRadius;
@@ -155,7 +155,7 @@ class _GFAccordionState extends State<GFAccordion>
                 ? Container(
                     decoration: BoxDecoration(
                       borderRadius: widget.contentBorderRadius,
-                      border: widget.contentborder,
+                      border: widget.contentBorder,
                       color: widget.contentBackgroundColor ?? Colors.white70,
                     ),
                     width: MediaQuery.of(context).size.width,
