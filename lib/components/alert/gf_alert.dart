@@ -17,7 +17,7 @@ class GFAlert extends StatefulWidget {
       this.alignment,
       this.contentChild,
       this.title,
-      this.bottombar,
+      this.bottomBar,
       this.contentTextStyle = const TextStyle(color: Colors.black87),
       this.titleTextStyle = const TextStyle(
         color: Colors.black87,
@@ -57,7 +57,7 @@ class GFAlert extends StatefulWidget {
   final Alignment alignment;
 
   ///type of [Widget] used for the buttons ie, OK, Cancel for the action in [GFAlert]
-  final Widget bottombar;
+  final Widget bottomBar;
 
   @override
   _GFAlertState createState() => _GFAlertState();
@@ -133,7 +133,7 @@ class _GFAlertState extends State<GFAlert> with TickerProviderStateMixin {
                   const SizedBox(
                     height: 10,
                   ),
-                  widget.bottombar ?? Container(),
+                  widget.bottomBar ?? Container(),
                 ],
               ),
             ),

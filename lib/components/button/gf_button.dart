@@ -797,8 +797,7 @@ class GFButton extends StatefulWidget {
     this.onLongPress,
     this.disabledColor,
     this.disabledTextColor,
-  })  : materialTapTargetSize =
-            materialTapTargetSize ?? MaterialTapTargetSize.padded,
+  }) : materialTapTargetSize = materialTapTargetSize ?? MaterialTapTargetSize.padded,
         assert(shape != null, 'Button shape can not be null'),
         // assert(elevation != null && elevation >= 0.0),
         assert(focusElevation != null && focusElevation >= 0.0),
@@ -1284,35 +1283,45 @@ class _GFButtonState extends State<GFButton> {
     }
 
     TextStyle getTextStyle() {
-      if (widget.size == GFSize.SMALL) {
+      if (widget.size == GFSize.XSMALL) {
+        return TextStyle(
+          color: widget.enabled ? getTextColor() : getDisabledTextColor(),
+          fontSize: 11,
+          debugLabel: 'GFButton -> GFSize.XSMALL',
+        );
+      } else if (widget.size == GFSize.SMALL) {
         return TextStyle(
           color: widget.enabled ? getTextColor() : getDisabledTextColor(),
           fontSize: 12,
+          debugLabel: 'GFButton -> GFSize.SMALL',
         );
       } else if (widget.size == GFSize.MEDIUM) {
         return TextStyle(
           color: widget.enabled ? getTextColor() : getDisabledTextColor(),
           fontSize: 13,
           fontWeight: FontWeight.w400,
+          debugLabel: 'GFButton -> GFSize.MEDIUM',
         );
       } else if (widget.size == GFSize.LARGE) {
         return TextStyle(
           color: widget.enabled ? getTextColor() : getDisabledTextColor(),
           fontSize: 14,
           fontWeight: FontWeight.w500,
+          debugLabel: 'GFButton -> GFSize.LARGE',
         );
       }
       return TextStyle(
         color: widget.enabled ? getTextColor() : getDisabledTextColor(),
         fontSize: 13,
         fontWeight: FontWeight.w400,
+        debugLabel: 'GFButton -> default',
       );
     }
 
     final Widget result = Container(
       constraints: icon == null
-          ? const BoxConstraints(minWidth: 80)
-          : const BoxConstraints(minWidth: 90),
+          ? const BoxConstraints(minWidth: 60)
+          : const BoxConstraints(minWidth: 70),
       decoration: widget.type == GFButtonType.solid ? getBoxShadow() : null,
       child: Material(
         elevation: _effectiveElevation,

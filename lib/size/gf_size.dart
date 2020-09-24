@@ -1,5 +1,8 @@
 /// [GFSize] is used to specify the size of the widget.
 class GFSize {
+  /// [GFSize.XSMALL] (24.0) is used to specify extra small sized widgets.
+  static const double XSMALL = 24;
+
   /// [GFSize.SMALL] (32.0) is used to specify small sized widgets.
   static const double SMALL = 32;
 

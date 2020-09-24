@@ -21,8 +21,8 @@ class GFCheckboxListTile extends StatelessWidget {
     this.size = GFSize.MEDIUM,
     this.type = GFCheckboxType.basic,
     this.checkColor = GFColors.WHITE,
-    this.activebgColor = GFColors.PRIMARY,
-    this.inactivebgColor = GFColors.WHITE,
+    this.activeBackgroundColor = GFColors.PRIMARY,
+    this.inactiveBackgroundColor = GFColors.WHITE,
     this.activeBorderColor = GFColors.WHITE,
     this.inactiveBorderColor = GFColors.DARK,
     this.activeIcon = const Icon(
@@ -31,7 +31,7 @@ class GFCheckboxListTile extends StatelessWidget {
       color: GFColors.WHITE,
     ),
     this.inactiveIcon = const Icon(Icons.close),
-    this.custombgColor = GFColors.SUCCESS,
+    this.customBackgroundColor = GFColors.SUCCESS,
     this.selected = false,
     this.autofocus = false,
   })  : assert(value != null),
@@ -39,10 +39,10 @@ class GFCheckboxListTile extends StatelessWidget {
         assert(autofocus != null),
         super(key: key);
 
-  ///type of [String] used to pass text, alternative to title property and gets higher priority than title
+  /// type of [String] used to pass text, alternative to title property and gets higher priority than title
   final String titleText;
 
-  ///type of [String] used to pass text, alternative to subtitle property and gets higher priority than subtitle
+  /// type of [String] used to pass text, alternative to subtitle property and gets higher priority than subtitle
   final String subtitleText;
 
   /// The GFListTile's background color. Can be given [Color] or [GFColors]
@@ -66,20 +66,20 @@ class GFCheckboxListTile extends StatelessWidget {
   /// defines the padding of GFListTile
   final EdgeInsets padding;
 
-  /// type of [GFCheckboxType] which is of four type is basic, sqaure, circular and custom
+  /// type of [GFCheckboxType] which is of four type is basic, square, circular and custom
   final GFCheckboxType type;
 
   /// type of [double] which is GFSize ie, small, medium and large and can use any double value
   final double size;
 
-  /// type pf [Color] used to change the checkcolor when the checkbox is active
+  /// type pf [Color] used to change the check color when the checkbox is active
   final Color checkColor;
 
   /// type of [Color] used to change the backgroundColor of the active checkbox
-  final Color activebgColor;
+  final Color activeBackgroundColor;
 
   /// type of [Color] used to change the backgroundColor of the inactive checkbox
-  final Color inactivebgColor;
+  final Color inactiveBackgroundColor;
 
   /// type of [Color] used to change the border color of the active checkbox
   final Color activeBorderColor;
@@ -90,17 +90,17 @@ class GFCheckboxListTile extends StatelessWidget {
   /// Called when the user checks or unchecks the checkbox.
   final ValueChanged<bool> onChanged;
 
-  ///Used to set the current state of the checkbox
+  /// Used to set the current state of the checkbox
   final bool value;
 
-  ///type of Widget used to change the  checkbox's active icon
+  /// type of Widget used to change the active icon of the checkbox
   final Widget activeIcon;
 
-  ///type of [Widget] used to change the  checkbox's inactive icon
+  /// type of [Widget] used to change the inactive icon of the checkbox
   final Widget inactiveIcon;
 
   /// type of [Color] used to change the background color of the custom active  checkbox only
-  final Color custombgColor;
+  final Color customBackgroundColor;
 
   /// To have the list tile appear selected when the checkbox is checked, pass the same value to both.
   /// Normally, this property is left to its default value, false.
@@ -134,13 +134,13 @@ class GFCheckboxListTile extends StatelessWidget {
             onChanged: onChanged,
             value: value,
             size: size,
-            activebgColor: activebgColor,
+            activeBackgroundColor: activeBackgroundColor,
             inactiveIcon: inactiveIcon,
             activeBorderColor: activeBorderColor,
-            inactivebgColor: inactivebgColor,
+            inactiveBackgroundColor: inactiveBackgroundColor,
             activeIcon: activeIcon,
             inactiveBorderColor: inactiveBorderColor,
-            custombgColor: custombgColor,
+            customBackgroundColor: customBackgroundColor,
             checkColor: checkColor,
             type: type,
           ),

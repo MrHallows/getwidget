@@ -10,8 +10,8 @@ class GFCheckbox extends StatefulWidget {
       this.size = GFSize.MEDIUM,
       this.type = GFCheckboxType.basic,
       this.checkColor = GFColors.WHITE,
-      this.activebgColor = GFColors.PRIMARY,
-      this.inactivebgColor = GFColors.WHITE,
+      this.activeBackgroundColor = GFColors.PRIMARY,
+      this.inactiveBackgroundColor = GFColors.WHITE,
       this.activeBorderColor = GFColors.WHITE,
       this.inactiveBorderColor = GFColors.DARK,
       this.onChanged,
@@ -22,26 +22,26 @@ class GFCheckbox extends StatefulWidget {
         color: GFColors.WHITE,
       ),
       this.inactiveIcon = const Icon(Icons.close),
-      this.custombgColor = GFColors.SUCCESS,
+      this.customBackgroundColor = GFColors.SUCCESS,
       this.autofocus = false,
       this.focusNode})
       : assert(autofocus != null),
         super(key: key);
 
-  /// type of [GFCheckboxType] which is of four type is basic, sqaure, circular and custom
+  /// type of [GFCheckboxType] which is of four type is basic, square, circular and custom
   final GFCheckboxType type;
 
   /// type of [double] which is GFSize ie, small, medium and large and can use any double value
   final double size;
 
-  /// type pf [Color] used to change the checkcolor when the checkbox is active
+  /// type pf [Color] used to change the check color when the checkbox is active
   final Color checkColor;
 
   /// type of [Color] used to change the backgroundColor of the active checkbox
-  final Color activebgColor;
+  final Color activeBackgroundColor;
 
   /// type of [Color] used to change the backgroundColor of the inactive checkbox
-  final Color inactivebgColor;
+  final Color inactiveBackgroundColor;
 
   /// type of [Color] used to change the border color of the active checkbox
   final Color activeBorderColor;
@@ -52,17 +52,17 @@ class GFCheckbox extends StatefulWidget {
   /// Called when the user checks or unchecks the checkbox.
   final ValueChanged<bool> onChanged;
 
-  ///Used to set the current state of the checkbox
+  /// Used to set the current state of the checkbox
   final bool value;
 
-  ///type of Widget used to change the  checkbox's active icon
+  /// type of Widget used to change the active icon of the checkbox
   final Widget activeIcon;
 
-  ///type of [Widget] used to change the  checkbox's inactive icon
+  /// type of [Widget] used to change the inactive icon of the checkbox
   final Widget inactiveIcon;
 
   /// type of [Color] used to change the background color of the custom active  checkbox only
-  final Color custombgColor;
+  final Color customBackgroundColor;
 
   /// {@macro flutter.widgets.Focus.autofocus}
   final bool autofocus;
@@ -102,8 +102,8 @@ class _GFCheckboxState extends State<GFCheckbox> {
                     ? widget.value
                         ? widget.type == GFCheckboxType.custom
                             ? Colors.white
-                            : widget.activebgColor
-                        : widget.inactivebgColor
+                            : widget.activeBackgroundColor
+                        : widget.inactiveBackgroundColor
                     : Colors.grey,
                 borderRadius: widget.type == GFCheckboxType.basic
                     ? BorderRadius.circular(3)
@@ -130,7 +130,7 @@ class _GFCheckboxState extends State<GFCheckbox> {
                             height: widget.size * 0.8,
                             decoration: BoxDecoration(
                                 shape: BoxShape.rectangle,
-                                color: widget.custombgColor),
+                                color: widget.customBackgroundColor),
                           )
                         ],
                       )
